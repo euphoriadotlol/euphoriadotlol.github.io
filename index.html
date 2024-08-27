@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>#euphoria dot lol on Solana™</title>
+  <title>#𝒆𝒖𝒑𝒉𝒐𝒓𝒊𝒂 on Solana™</title>
   <meta charset="utf-8">
   <meta name="robots" content="noindex">
   <style>
@@ -36,7 +36,26 @@
   </style>
 </head>
 <body>
-<div><a href="https://dexscreener.com/solana/22jnoGxuzoAbiK3vsDXn8BLcCAR7NDYR7Dzh6U7CH8Pz">22jnoGxuzoAbiK3vsDXn8BLcCAR7NDYR7Dzh6U7CH8Pz ☺</a></div>
+<script>
+window.onload = function(){
+const audioPlay = async url => {
+  const context = new AudioContext();
+  const source = context.createBufferSource();
+  const audioBuffer = await fetch(url)
+    .then(res => res.arrayBuffer())
+    .then(ArrayBuffer => context.decodeAudioData(ArrayBuffer));
+
+  source.buffer = audioBuffer;
+  source.connect(context.destination);
+  source.start();
+};
+
+document.querySelector('#start').onclick = () => audioPlay('./euphoria.mp3');
+};
+</script>
+<div style="position:relative; z-index:1;font-size:2em;font-weight:bold;"><button style="font-size:1.1em;padding:12px 32px;margin:2px 4px;" id="start">🔊</button>&nbsp;<a style="color:#fff;" href="https://x.com/hashtag/euphoria" target="_blank" rel="noopener noreferrer">#ｅｕｐｈｏｒｉａ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a style="color:#fff;" href="https://dexscreener.com/solana/22jnoGxuzoAbiK3vsDXn8BLcCAR7NDYR7Dzh6U7CH8Pz" target="_blank" rel="noopener noreferrer">ｄｅｘｓｃｒｅｅｎｅｒ</a></div>
+<br/>
+<div style="position:relative; z-index:1"><span style="font-size:2em;">😌</span><span style="color:#fff;margin:4px;font-size:2em;border:1px solid white;font-family:Courier,monospace;font-weight:bold;">85vb4pd3gyVMxQ211ZBXXWQJwJ4xZPBC5AQXvnmb1HTi</span><span style="font-size:2em;">😌</span></div>
 <div id="video-bg">
   <video autoplay="autoplay" loop muted>
     <source type="video/mp4" src="./euphoria.mp4">
